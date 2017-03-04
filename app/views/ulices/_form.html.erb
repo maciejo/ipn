@@ -1,0 +1,53 @@
+<%= form_for(@ulice) do |f| %>
+  <% if @ulice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ulice.errors.count, "error") %> prohibited this ulice from being saved:</h2>
+
+      <ul>
+      <% @ulice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nazwa_ulicy %><br>
+    <%= f.text_field :nazwa_ulicy %>
+  </div>
+  <div class="field">
+    <%= f.label :miejscowosc %><br>
+    <%= f.text_field :miejscowosc %>
+  </div>
+  <div class="field">
+    <%= f.label :opinia %><br>
+    <%= f.text_field :opinia %>
+  </div>
+  <div class="field">
+    <%= f.label :zrodlo_uzasadnienia %><br>
+    <%= f.text_field :zrodlo_uzasadnienia %>
+  </div>
+  <div class="field">
+    <%= f.label :data_wpisu %><br>
+    <%= f.text_field :data_wpisu %>
+  </div>
+  <div class="field">
+    <%= f.label :autor %><br>
+    <%= f.text_field :autor %>
+  </div>
+  <div class="field">
+    <%= f.label :email_autora %><br>
+    <%= f.text_field :email_autora %>
+  </div>
+  <div class="field">
+    <%= f.label :telefon_autora %><br>
+    <%= f.text_field :telefon_autora %>
+  </div>
+  <div class="field">
+    <%= f.label :oddział %><br>
+    <%= f.text_field :oddział %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! ulice, :id, :nazwa_ulicy, :miejscowosc, :opinia, :zrodlo_uzasadnienia, :data_wpisu, :autor, :email_autora, :telefon_autora, :oddział, :created_at, :updated_at
+json.url ulice_url(ulice, format: :json)

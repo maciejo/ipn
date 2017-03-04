@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa ulicy:</strong>
+  <%= @ulice.nazwa_ulicy %>
+</p>
+
+<p>
+  <strong>Miejscowosc:</strong>
+  <%= @ulice.miejscowosc %>
+</p>
+
+<p>
+  <strong>Opinia:</strong>
+  <%= @ulice.opinia %>
+</p>
+
+<p>
+  <strong>Zrodlo uzasadnienia:</strong>
+  <%= @ulice.zrodlo_uzasadnienia %>
+</p>
+
+<p>
+  <strong>Data wpisu:</strong>
+  <%= @ulice.data_wpisu %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @ulice.autor %>
+</p>
+
+<p>
+  <strong>Email autora:</strong>
+  <%= @ulice.email_autora %>
+</p>
+
+<p>
+  <strong>Telefon autora:</strong>
+  <%= @ulice.telefon_autora %>
+</p>
+
+<p>
+  <strong>Oddział:</strong>
+  <%= @ulice.oddział %>
+</p>
+
+<%= link_to 'Edit', edit_ulice_path(@ulice) %> |
+<%= link_to 'Back', ulices_path %>
